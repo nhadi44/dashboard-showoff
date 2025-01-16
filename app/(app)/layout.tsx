@@ -6,16 +6,18 @@ import React from 'react';
 import { usePathname } from 'next/navigation';
 import Breadcrumb from '@/components/breadcrumb';
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const pathname = usePathname();
 
   return (
     <Layout>
       <section className="p-7 flex flex-row-reverse align-center justify-between">
         <Breadcrumb />
-        <div>
-          {children}
-        </div>
+        <div>{children}</div>
       </section>
     </Layout>
   );

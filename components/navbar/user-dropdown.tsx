@@ -35,10 +35,12 @@ export const UserDropdown = () => {
       </NavbarItem>
       <DropdownMenu
         aria-label="User menu actions"
-        onAction={(actionKey) => console.log({ actionKey })}>
+        onAction={(actionKey) => console.log({ actionKey })}
+      >
         <DropdownItem
           key="profile"
-          className="flex flex-col justify-start w-full items-start">
+          className="flex flex-col justify-start w-full items-start"
+        >
           <p>Signed in as</p>
           <p>zoey@example.com</p>
         </DropdownItem>
@@ -47,7 +49,8 @@ export const UserDropdown = () => {
           key="logout"
           color="danger"
           className="text-danger"
-          onPress={handleLogout}>
+          onPress={handleLogout}
+        >
           Log Out
         </DropdownItem>
       </DropdownMenu>

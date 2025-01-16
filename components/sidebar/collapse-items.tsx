@@ -9,7 +9,7 @@ import { usePathname } from 'next/navigation';
 type Item = {
   title: string;
   href: string;
-}
+};
 
 interface Props {
   icon: React.ReactNode;
@@ -29,8 +29,7 @@ export const CollapseItems = ({ icon, items, title, isActive }: Props) => {
           indicator={<ChevronDownIcon />}
           classNames={{
             indicator: 'data-[open=true]:-rotate-180',
-            trigger:
-              `py-0 min-h-[44px] hover:bg-default-100 rounded-xl active:scale-[0.98] transition-transform px-3.5 ${isActive ? 'bg-primary-100 [&_svg_path]:fill-primary-500' : ''}`,
+            trigger: `py-0 min-h-[44px] hover:bg-default-100 rounded-xl active:scale-[0.98] transition-transform px-3.5 ${isActive ? 'bg-primary-100 [&_svg_path]:fill-primary-500' : ''}`,
 
             title:
               'px-0 flex text-base gap-2 h-full items-center cursor-pointer',

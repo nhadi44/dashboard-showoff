@@ -8,7 +8,6 @@ import { siteConfig } from '@/config/site';
 import { fontSans } from '@/config/fonts';
 import { Navbar } from '@/components/navbar';
 
-
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
@@ -27,12 +26,11 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout(
-  {
-    children,
-  }: {
-    children: React.ReactNode;
-  }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html suppressHydrationWarning lang="en">
       <head />
@@ -44,9 +42,7 @@ export default function RootLayout(
       >
         <Providers themeProps={{ attribute: 'class', defaultTheme: 'dark' }}>
           <div>
-            <main>
-              {children}
-            </main>
+            <main>{children}</main>
           </div>
         </Providers>
       </body>

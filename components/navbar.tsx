@@ -92,7 +92,7 @@ export const Navbar = () => {
       value={{
         collapsed: false,
         setCollapsed: () => handleToggleSidebar,
-      }}>
-    </SidebarContext.Provider>
+      }}
+    ></SidebarContext.Provider>
   );
 };

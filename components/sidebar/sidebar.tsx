@@ -83,10 +83,13 @@ export const SidebarWrapper = () => {
                 icon={<AccountsIcon />}
                 href="accounts"
               />
-              <CollapseItems icon={<SettingIcon />} title={'CMS Settings'} items={cmsSettingItems}
-                             isActive={pathname.startsWith('/cms-setting')} />
+              <CollapseItems
+                icon={<SettingIcon />}
+                title={'CMS Settings'}
+                items={cmsSettingItems}
+                isActive={pathname.startsWith('/cms-setting')}
+              />
             </SidebarMenu>
-
           </div>
         </div>
       </div>

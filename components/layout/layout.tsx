@@ -23,7 +23,8 @@ export const Layout = ({ children }: Props) => {
       value={{
         collapsed: sidebarOpen,
         setCollapsed: handleToggleSidebar,
-      }}>
+      }}
+    >
       <section className="flex">
         <SidebarWrapper />
         <NavbarWrapper>{children}</NavbarWrapper>
