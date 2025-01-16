@@ -1,0 +1,7 @@
+# Ignored files
+node_modules
+.next
+out
+build
+package-lock.json
+yarn.lock
